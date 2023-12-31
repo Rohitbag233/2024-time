@@ -1,0 +1,84 @@
+body {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  /* Common styles for countdown and time taken */
+  .countdown,
+  .timetaken {
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #181818;
+    box-shadow: 0 0 10px #ccc;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 500px; /* Adjust the maximum width as needed */
+    margin-bottom: 20px; /* Space between sections */
+  }
+  
+  .countdown .countdown-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(80, 255, 80); /* Set countdown text color to red */
+  }
+  
+  .timetaken .timetaken-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(255, 30, 30); /* Set time taken text color to green */
+  } 
+  
+  .countdown .countdown-value,
+  .timetaken .timetaken-value {
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  /* Logo */
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 70px;
+    width: auto;
+    color: #ccc;
+  }
+  
+  body {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .countdown, .timetaken {
+      font-size: 24px;
+      width: 85%;
+    }
+  
+    .countdown .countdown-value, .timetaken .timetaken-value {
+      font-size: 1em;
+    }
+  }
+  
